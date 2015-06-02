@@ -2,7 +2,6 @@ package com.vesko.portfolio.portfolioapp;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,7 +41,6 @@ public class MainActivity extends ActionBarActivity {
 
     /** Called when a button is clicked */
     public void displayToast(View v) {
-        Log.d("vesko", "clicked");
         String buttonText = v instanceof TextView ? ((TextView)v).getText().toString() : "";
         String toastMessage = getString(R.string.this_button_will_launch_app, buttonText);
         Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
