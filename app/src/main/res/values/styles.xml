@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="OrangeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">240dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:background">@color/udacity_orange</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:onClick">displayToast</item>
+    </style>
+
+    <style name="RedButton" parent="OrangeButton">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
